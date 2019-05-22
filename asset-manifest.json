@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/orbit-portfolio/static/css/main.34de6062.chunk.css",
+    "main.js": "/orbit-portfolio/static/js/main.6f6fdfd8.chunk.js",
+    "main.js.map": "/orbit-portfolio/static/js/main.6f6fdfd8.chunk.js.map",
+    "runtime~main.js": "/orbit-portfolio/static/js/runtime~main.0adf0212.js",
+    "runtime~main.js.map": "/orbit-portfolio/static/js/runtime~main.0adf0212.js.map",
+    "static/js/2.149ceffc.chunk.js": "/orbit-portfolio/static/js/2.149ceffc.chunk.js",
+    "static/js/2.149ceffc.chunk.js.map": "/orbit-portfolio/static/js/2.149ceffc.chunk.js.map",
+    "index.html": "/orbit-portfolio/index.html",
+    "precache-manifest.c05d302ec00e146f24bb5e91814b010f.js": "/orbit-portfolio/precache-manifest.c05d302ec00e146f24bb5e91814b010f.js",
+    "service-worker.js": "/orbit-portfolio/service-worker.js",
+    "static/css/main.34de6062.chunk.css.map": "/orbit-portfolio/static/css/main.34de6062.chunk.css.map"
+  }
+}
