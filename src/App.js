@@ -4,6 +4,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import Education from "./components/Education";
+import Licenses from "./components/Licenses";
 
 // import Orbit defaultTokens (for colors, etc.)
 // list of all tokens on: https://orbit.kiwi/design-tokens
@@ -31,7 +32,6 @@ import Check from "@kiwicom/orbit-components/lib/icons/Check";
 import ChevronRight from "@kiwicom/orbit-components/lib/icons/ChevronRight";
 import ContactEmail from "@kiwicom/orbit-components/lib/icons/ContactEmail";
 import Entertainment from "@kiwicom/orbit-components/lib/icons/Entertainment";
-import InsuranceConfirmed from "@kiwicom/orbit-components/lib/icons/InsuranceConfirmed";
 import Map from "@kiwicom/orbit-components/lib/icons/Map";
 import Phone from "@kiwicom/orbit-components/lib/icons/Phone";
 import Trip from "@kiwicom/orbit-components/lib/icons/Trip";
@@ -57,53 +57,7 @@ function App() {
           <Skills />
           <Work />
           <Education />
-
-          <Card>
-            <CardHeader
-              title="Licenses & Certifications"
-              icon={<InsuranceConfirmed />}
-            />
-
-            <CardSection>
-              <CardSectionHeader>
-                <Stack direction="row" align="center" justify="between">
-                  <Stack direction="column" spacing="tight" grow={false} shrink>
-                    <Heading element="h4" type="title4">
-                      JavaScript 2
-                    </Heading>
-                    <Text type="secondary" size="small">
-                      Czechitas
-                    </Text>
-                  </Stack>
-                  <Stack>
-                    <Text type="secondary" size="small" align="right">
-                      Issued 05/2019
-                    </Text>
-                  </Stack>
-                </Stack>
-              </CardSectionHeader>
-              {/*</CardSection>*/}
-
-              {/*<CardSection>*/}
-              <CardSectionHeader>
-                <Stack direction="row" align="center" justify="between">
-                  <Stack direction="column" spacing="tight" grow={false} shrink>
-                    <Heading element="h4" type="title4">
-                      JavaScript 1
-                    </Heading>
-                    <Text type="secondary" size="small">
-                      Czechitas
-                    </Text>
-                  </Stack>
-                  <Stack>
-                    <Text type="secondary" size="small" align="right">
-                      Issued 12/2018
-                    </Text>
-                  </Stack>
-                </Stack>
-              </CardSectionHeader>
-            </CardSection>
-          </Card>
+          <Licenses />
 
           <Card>
             <CardHeader title="Volunteer Experience" icon={<Trip />} />
