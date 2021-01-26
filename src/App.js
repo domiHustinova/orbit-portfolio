@@ -1,5 +1,6 @@
 // import React framework
 import React from "react";
+import About from "./components/About";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import Education from "./components/Education";
@@ -13,7 +14,6 @@ import { defaultTokens } from "@kiwicom/orbit-design-tokens";
 import Stack from "@kiwicom/orbit-components/lib/Stack";
 import Text from "@kiwicom/orbit-components/lib/Text";
 import TextLink from "@kiwicom/orbit-components/lib/TextLink";
-import Button from "@kiwicom/orbit-components/lib/Button";
 import Heading from "@kiwicom/orbit-components/lib/Heading";
 import Card, {
   CardHeader,
@@ -29,16 +29,12 @@ import Illustration from "@kiwicom/orbit-components/lib/Illustration";
 import GenderWoman from "@kiwicom/orbit-components/lib/icons/GenderWoman";
 import Check from "@kiwicom/orbit-components/lib/icons/Check";
 import ChevronRight from "@kiwicom/orbit-components/lib/icons/ChevronRight";
-import InformationCircle from "@kiwicom/orbit-components/lib/icons/InformationCircle";
 import ContactEmail from "@kiwicom/orbit-components/lib/icons/ContactEmail";
 import Entertainment from "@kiwicom/orbit-components/lib/icons/Entertainment";
 import InsuranceConfirmed from "@kiwicom/orbit-components/lib/icons/InsuranceConfirmed";
 import Map from "@kiwicom/orbit-components/lib/icons/Map";
 import Phone from "@kiwicom/orbit-components/lib/icons/Phone";
-import Email from "@kiwicom/orbit-components/lib/icons/Email";
-import Linkedin from "@kiwicom/orbit-components/lib/icons/Linkedin";
 import Trip from "@kiwicom/orbit-components/lib/icons/Trip";
-import Code from "@kiwicom/orbit-components/lib/icons/Code";
 
 function App() {
   return (
@@ -57,40 +53,7 @@ function App() {
         }}
       >
         <Stack align="center" direction="column" spacing="compact">
-          <Card>
-            <CardHeader icon={<InformationCircle />} title="ABOUT ME" />
-            <CardSection>
-              <Stack direction="column">
-                <Stack justify="center" direction="row" spacing="compact">
-                  <Button
-                    iconLeft={<Email />}
-                    circled
-                    size="small"
-                    type="primary"
-                    href="mailto:domi.hustinova@gmail.com"
-                  />
-                  <Button
-                    iconLeft={<Linkedin />}
-                    circled
-                    external
-                    size="small"
-                    type="warning"
-                    href="https://www.linkedin.com/in/dominika-hustinova/"
-                  />
-                  <Button
-                    iconLeft={<Code />}
-                    circled
-                    external
-                    size="small"
-                    type="critical"
-                    href="https://github.com/domiHustinova"
-                  />
-                </Stack>
-                <Text></Text>
-              </Stack>
-            </CardSection>
-          </Card>
-
+          <About />
           <Skills />
           <Work />
           <Education />
