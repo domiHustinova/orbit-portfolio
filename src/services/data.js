@@ -1,3 +1,14 @@
+export const SKILLS = [
+  {
+    title: "Languages",
+    list: [
+      { name: "Slovak", level: "Native" },
+      { name: "English", level: "C1" },
+      { name: "French", level: "A2" },
+    ],
+  },
+];
+
 export const LICENSES = [
   {
     name: "React",
@@ -85,10 +96,13 @@ export const WORK_EXPERIENCES = [
       "Monitoring active issues, communicating across teams to ensure progress",
     ],
     skills: [
+      "HTML",
+      "CSS",
       "Gherkin",
       "Cucumber",
       "Javascript",
       "React",
+      "Testing Library",
       "Gitlab",
       "Cypress",
       "Jira",

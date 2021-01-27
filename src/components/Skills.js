@@ -1,5 +1,7 @@
 import React from "react";
 
+import { SKILLS } from "../services/data";
+
 import Card, {
   CardHeader,
   CardSection,
@@ -19,28 +21,24 @@ const Skills = () => (
     <CardHeader icon={<Chart />} title="SKILLS" />
     <CardSection>
       <Stack direction="row" spacing="comfy">
-        <Table compact>
-          <TableHead>
-            <TableRow>
-              <TableCell>Language</TableCell>
-              <TableCell>Level</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            <TableRow>
-              <TableCell>Slovak</TableCell>
-              <TableCell>Native</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>English</TableCell>
-              <TableCell>C1</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>French</TableCell>
-              <TableCell>A2</TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
+        {SKILLS.map((skill) => (
+          <Table compact>
+            <TableHead>
+              <TableRow>
+                <TableCell>{skill.title}</TableCell>
+                <TableCell>Level</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {skill.list.map((item) => (
+                <TableRow>
+                  <TableCell>{item.name}</TableCell>
+                  <TableCell>{item.level}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        ))}
       </Stack>
     </CardSection>
   </Card>
