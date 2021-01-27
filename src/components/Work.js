@@ -12,8 +12,7 @@ import Text from "@kiwicom/orbit-components/lib/Text";
 import Badge from "@kiwicom/orbit-components/lib/Badge";
 import List, { ListItem } from "@kiwicom/orbit-components/lib/List";
 
-import City from "@kiwicom/orbit-components/lib/icons/City";
-import PriorityBoarding from "@kiwicom/orbit-components/lib/icons/PriorityBoarding";
+import { City, PriorityBoarding } from "@kiwicom/orbit-components/lib/icons";
 
 const Work = () => (
   <Card>

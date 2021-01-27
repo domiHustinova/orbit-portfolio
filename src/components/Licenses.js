@@ -1,4 +1,5 @@
 import React from "react";
+import { LICENSES } from "../services/data";
 
 import Card, {
   CardHeader,
@@ -19,43 +20,25 @@ const Licenses = () => (
     />
 
     <CardSection>
-      <CardSectionHeader>
-        <Stack direction="row" align="center" justify="between">
-          <Stack direction="column" spacing="tight" grow={false} shrink>
-            <Heading element="h4" type="title4">
-              JavaScript 2
-            </Heading>
-            <Text type="secondary" size="small">
-              Czechitas
-            </Text>
+      {LICENSES.map((licese) => (
+        <CardSectionHeader>
+          <Stack direction="row" align="center" justify="between">
+            <Stack direction="column" spacing="tight" grow={false} shrink>
+              <Heading element="h4" type="title4">
+                {licese.name}
+              </Heading>
+              <Text type="secondary" size="small">
+                {licese.organization}
+              </Text>
+            </Stack>
+            <Stack>
+              <Text type="secondary" size="small" align="right">
+                Issued {licese.issueDate}
+              </Text>
+            </Stack>
           </Stack>
-          <Stack>
-            <Text type="secondary" size="small" align="right">
-              Issued 05/2019
-            </Text>
-          </Stack>
-        </Stack>
-      </CardSectionHeader>
-      {/*</CardSection>*/}
-
-      {/*<CardSection>*/}
-      <CardSectionHeader>
-        <Stack direction="row" align="center" justify="between">
-          <Stack direction="column" spacing="tight" grow={false} shrink>
-            <Heading element="h4" type="title4">
-              JavaScript 1
-            </Heading>
-            <Text type="secondary" size="small">
-              Czechitas
-            </Text>
-          </Stack>
-          <Stack>
-            <Text type="secondary" size="small" align="right">
-              Issued 12/2018
-            </Text>
-          </Stack>
-        </Stack>
-      </CardSectionHeader>
+        </CardSectionHeader>
+      ))}
     </CardSection>
   </Card>
 );
