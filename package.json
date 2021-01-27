@@ -2,14 +2,18 @@
   "name": "orbit-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://domihustinova.github.io/orbit-portfolio/",
   "dependencies": {
     "@kiwicom/orbit-components": "^0.42.0",
+    "gh-pages": "^3.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
     "styled-components": "^4.2.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
