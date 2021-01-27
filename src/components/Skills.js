@@ -1,5 +1,6 @@
 import React from "react";
 
+import CardLayout from "./CardLayout";
 import { SKILLS } from "../services/data";
 
 import { CardSection } from "@kiwicom/orbit-components/lib/Card";
@@ -10,7 +11,6 @@ import Table, {
   TableCell,
 } from "@kiwicom/orbit-components/lib/Table";
 import Stack from "@kiwicom/orbit-components/lib/Stack";
-import CardLayout from "./CardLayout";
 
 const Skills = () => (
   <CardLayout icon="skills" title="SKILLS">

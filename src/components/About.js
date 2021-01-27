@@ -1,13 +1,12 @@
 import React from "react";
 
+import CardLayout from "./CardLayout";
 import { LINKS } from "../services/data";
 import { renderIcon } from "../services/helpers";
-import CardLayout from "./CardLayout";
 
 import { CardSection } from "@kiwicom/orbit-components/lib/Card";
 import Stack from "@kiwicom/orbit-components/lib/Stack";
 import Button from "@kiwicom/orbit-components/lib/Button";
-import Text from "@kiwicom/orbit-components/lib/Text";
 
 const About = () => (
   <CardLayout icon="about" title="ABOUT ME">
@@ -25,7 +24,6 @@ const About = () => (
             />
           ))}
         </Stack>
-        <Text></Text>
       </Stack>
     </CardSection>
   </CardLayout>

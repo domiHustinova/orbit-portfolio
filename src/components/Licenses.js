@@ -1,4 +1,5 @@
 import React from "react";
+import CardLayout from "./CardLayout";
 import { LICENSES } from "../services/data";
 
 import {
@@ -8,7 +9,6 @@ import {
 import Stack from "@kiwicom/orbit-components/lib/Stack";
 import Text from "@kiwicom/orbit-components/lib/Text";
 import Heading from "@kiwicom/orbit-components/lib/Heading";
-import CardLayout from "./CardLayout";
 
 const Licenses = () => (
   <CardLayout icon="licenses" title="Licenses & Certifications">

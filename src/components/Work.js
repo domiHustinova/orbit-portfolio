@@ -1,9 +1,8 @@
 import React from "react";
 
+import CardLayout from "./CardLayout";
 import { WORK_EXPERIENCES } from "../services/data";
 import { renderIcon } from "../services/helpers";
-
-import CardLayout from "./CardLayout";
 
 import {
   CardSection,
