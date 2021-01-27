@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -15,22 +16,22 @@ import { defaultTokens } from "@kiwicom/orbit-design-tokens";
 // list of all components on: https://orbit.kiwi/components and https://kiwicom.github.io/orbit-components/?path=/story
 import Stack from "@kiwicom/orbit-components/lib/Stack";
 
+const StyledWrapper = styled.div`
+  width: 100%;
+  margin: 0;
+  background-color: ${defaultTokens.paletteCloudLight};
+`;
+
+const StyledDiv = styled.div`
+  padding: ${defaultTokens.spaceMedium};
+  max-width: 750px;
+  margin: 0 auto;
+`;
+
 function App() {
   return (
-    <div
-      style={{
-        width: "100%",
-        margin: 0,
-        backgroundColor: defaultTokens.paletteCloudLight,
-      }}
-    >
-      <div
-        style={{
-          padding: defaultTokens.spaceMedium, // 16px
-          maxWidth: "750px",
-          margin: "0 auto",
-        }}
-      >
+    <StyledWrapper>
+      <StyledDiv>
         <Stack align="center" direction="column" spacing="compact">
           <About />
           <Skills />
@@ -39,8 +40,8 @@ function App() {
           <Licenses />
           <Volunteer />
         </Stack>
-      </div>
-    </div>
+      </StyledDiv>
+    </StyledWrapper>
   );
 }
 
