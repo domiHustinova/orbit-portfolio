@@ -1,6 +1,11 @@
 import React from "react";
 
-import { Code, Email, Linkedin } from "@kiwicom/orbit-components/lib/icons";
+import {
+  Code,
+  Email,
+  Linkedin,
+  PriorityBoarding,
+} from "@kiwicom/orbit-components/lib/icons";
 
 export const renderIcon = (icon) => {
   switch (icon) {
@@ -10,6 +15,8 @@ export const renderIcon = (icon) => {
       return <Linkedin />;
     case "code":
       return <Code />;
+    case "arrows":
+      return <PriorityBoarding />;
     default:
       return null;
   }
