@@ -1,5 +1,10 @@
 export const LICENSES = [
   {
+    name: "React",
+    organization: "Czechitas",
+    issueDate: "07/2020",
+  },
+  {
     name: "Javascript 2",
     organization: "Czechitas",
     issueDate: "06/2019",
