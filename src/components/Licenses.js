@@ -1,24 +1,17 @@
 import React from "react";
 import { LICENSES } from "../services/data";
 
-import Card, {
-  CardHeader,
+import {
   CardSection,
   CardSectionHeader,
 } from "@kiwicom/orbit-components/lib/Card";
 import Stack from "@kiwicom/orbit-components/lib/Stack";
 import Text from "@kiwicom/orbit-components/lib/Text";
 import Heading from "@kiwicom/orbit-components/lib/Heading";
-
-import InsuranceConfirmed from "@kiwicom/orbit-components/lib/icons/InsuranceConfirmed";
+import CardLayout from "./CardLayout";
 
 const Licenses = () => (
-  <Card>
-    <CardHeader
-      title="Licenses & Certifications"
-      icon={<InsuranceConfirmed />}
-    />
-
+  <CardLayout icon="licenses" title="Licenses & Certifications">
     <CardSection>
       {LICENSES.map((licese) => (
         <CardSectionHeader>
@@ -40,7 +33,7 @@ const Licenses = () => (
         </CardSectionHeader>
       ))}
     </CardSection>
-  </Card>
+  </CardLayout>
 );
 
 export default Licenses;

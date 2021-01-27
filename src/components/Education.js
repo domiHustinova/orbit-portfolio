@@ -1,9 +1,9 @@
 import React from "react";
 
+import CardLayout from "./CardLayout";
 import { EDUCATION } from "../services/data";
 
-import Card, {
-  CardHeader,
+import {
   CardSection,
   CardSectionHeader,
   CardSectionContent,
@@ -13,11 +13,8 @@ import Text from "@kiwicom/orbit-components/lib/Text";
 import Heading from "@kiwicom/orbit-components/lib/Heading";
 import Badge from "@kiwicom/orbit-components/lib/Badge";
 
-import Sightseeing from "@kiwicom/orbit-components/lib/icons/Sightseeing";
-
 const Education = () => (
-  <Card>
-    <CardHeader title="Education" icon={<Sightseeing />} />
+  <CardLayout icon="education" title="Education">
     {EDUCATION.map((item) => (
       <CardSection expandable>
         <CardSectionHeader>
@@ -47,7 +44,7 @@ const Education = () => (
         </CardSectionContent>
       </CardSection>
     ))}
-  </Card>
+  </CardLayout>
 );
 
 export default Education;

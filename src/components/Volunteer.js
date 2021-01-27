@@ -1,7 +1,8 @@
 import React from "react";
 
-import Card, {
-  CardHeader,
+import CardLayout from "./CardLayout";
+
+import {
   CardSection,
   CardSectionHeader,
   CardSectionContent,
@@ -12,12 +13,8 @@ import Text from "@kiwicom/orbit-components/lib/Text";
 import TextLink from "@kiwicom/orbit-components/lib/TextLink";
 import Heading from "@kiwicom/orbit-components/lib/Heading";
 
-import Trip from "@kiwicom/orbit-components/lib/icons/Trip";
-
 const Volunteer = () => (
-  <Card>
-    <CardHeader title="Volunteer Experience" icon={<Trip />} />
-
+  <CardLayout icon="volunteer" title="Volunteer Experience">
     <CardSection expandable>
       <CardSectionHeader>
         <Stack direction="row" align="center" justify="between">
@@ -49,7 +46,7 @@ const Volunteer = () => (
         </Stack>
       </CardSectionContent>
     </CardSection>
-  </Card>
+  </CardLayout>
 );
 
 export default Volunteer;

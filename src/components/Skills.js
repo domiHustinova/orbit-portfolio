@@ -2,10 +2,7 @@ import React from "react";
 
 import { SKILLS } from "../services/data";
 
-import Card, {
-  CardHeader,
-  CardSection,
-} from "@kiwicom/orbit-components/lib/Card";
+import { CardSection } from "@kiwicom/orbit-components/lib/Card";
 import Table, {
   TableHead,
   TableBody,
@@ -13,12 +10,10 @@ import Table, {
   TableCell,
 } from "@kiwicom/orbit-components/lib/Table";
 import Stack from "@kiwicom/orbit-components/lib/Stack";
-
-import Chart from "@kiwicom/orbit-components/lib/icons/Chart";
+import CardLayout from "./CardLayout";
 
 const Skills = () => (
-  <Card>
-    <CardHeader icon={<Chart />} title="SKILLS" />
+  <CardLayout icon="skills" title="SKILLS">
     <CardSection>
       <Stack direction="row" spacing="comfy">
         {SKILLS.map((skill) => (
@@ -41,7 +36,7 @@ const Skills = () => (
         ))}
       </Stack>
     </CardSection>
-  </Card>
+  </CardLayout>
 );
 
 export default Skills;

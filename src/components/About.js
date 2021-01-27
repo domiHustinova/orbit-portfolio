@@ -2,20 +2,15 @@ import React from "react";
 
 import { LINKS } from "../services/data";
 import { renderIcon } from "../services/helpers";
+import CardLayout from "./CardLayout";
 
-import Card, {
-  CardHeader,
-  CardSection,
-} from "@kiwicom/orbit-components/lib/Card";
+import { CardSection } from "@kiwicom/orbit-components/lib/Card";
 import Stack from "@kiwicom/orbit-components/lib/Stack";
 import Button from "@kiwicom/orbit-components/lib/Button";
 import Text from "@kiwicom/orbit-components/lib/Text";
 
-import { InformationCircle } from "@kiwicom/orbit-components/lib/icons";
-
 const About = () => (
-  <Card>
-    <CardHeader icon={<InformationCircle />} title="ABOUT ME" />
+  <CardLayout icon="about" title="ABOUT ME">
     <CardSection>
       <Stack direction="column">
         <Stack justify="center" direction="row" spacing="compact">
@@ -33,7 +28,7 @@ const About = () => (
         <Text></Text>
       </Stack>
     </CardSection>
-  </Card>
+  </CardLayout>
 );
 
 export default About;

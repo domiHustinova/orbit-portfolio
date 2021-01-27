@@ -3,8 +3,9 @@ import React from "react";
 import { WORK_EXPERIENCES } from "../services/data";
 import { renderIcon } from "../services/helpers";
 
-import Card, {
-  CardHeader,
+import CardLayout from "./CardLayout";
+
+import {
   CardSection,
   CardSectionHeader,
   CardSectionContent,
@@ -15,11 +16,8 @@ import Text from "@kiwicom/orbit-components/lib/Text";
 import Badge from "@kiwicom/orbit-components/lib/Badge";
 import List, { ListItem } from "@kiwicom/orbit-components/lib/List";
 
-import { City } from "@kiwicom/orbit-components/lib/icons";
-
 const Work = () => (
-  <Card>
-    <CardHeader title="Work Experience" icon={<City />} />
+  <CardLayout icon="work" title="Work Experience">
     {WORK_EXPERIENCES.map((experience) => (
       <CardSection
         expandable={
@@ -65,7 +63,7 @@ const Work = () => (
         )}
       </CardSection>
     ))}
-  </Card>
+  </CardLayout>
 );
 
 export default Work;
